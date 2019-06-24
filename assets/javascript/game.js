@@ -5,10 +5,12 @@
 // ^^^probably going to need the onkeydown
 // when they guess wrong the counter should go down by increments of one."--"
 //track wins should go up by increments of one "++"
-// 
-var gameNames = {
-    firstName = "Galaga"
-    secondName = "Tetris"
-    thirdName = "Super Mario"
+// // 
+var gameNames = ["Galaga", "Tetris", "Super Mario"]
 
 }
+// for-loop for gameNames
+for (var i = 0; i < gameNames.length; i++) {
+    console.log(gameNames[i]);
+}
+console.log("what am I doing?");
