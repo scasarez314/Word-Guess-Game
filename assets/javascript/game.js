@@ -1,16 +1,30 @@
 // get the cumputer to randomly choose a word
-//  ^^math to randomly choose.
-// have the user guess the word 
-// when they guess the letters they have chosen should show up on screen
-// ^^^probably going to need the onkeydown
-// when they guess wrong the counter should go down by increments of one."--"
-//track wins should go up by increments of one "++"
-// // 
-var gameNames = ["Galaga", "Tetris", "Super Mario"]
+var gameNames = ["Galaga", "Tetris", "Frogger"]
+var gameNames = gameNames[Math.floor(Math.random() * gameNames.length)];
+console.log(gameNames)
 
+// underscores match the guessed word
+var underscores = []; {
+    for (var i = 0; i < gameNames.length; i++) {
+        console.log("The computer guessed " + gameNames[i]);
+    }
 }
-// for-loop for gameNames
-for (var i = 0; i < gameNames.length; i++) {
-    console.log(gameNames[i]);
+
+// have the user guess the word
+// Letters You've Chosen: track the keys chosen and show them on screen
+// ^^^probably going to need the onkeydown
+document.onkeydown = function () {
+    var playerGuess = String.fromCharCode(event.keyCode).toLocaleLowerCase();
+    console.log(playerGuess)
 }
-console.log("what am I doing?");
+// Number of Guesses: when they guess wrong the counter should go down by increments of one."--"
+
+
+//Wins: track wins should go up by increments of one "++" 
+var playerGuess = function () {
+
+    if (playerGuess === gameNames) {
+        var playerGuess = String.fromCharCode(event.keyCode).toLocaleLowerCase();
+        Wins++;
+        console.log("Wins: " + Wins)
+    }
