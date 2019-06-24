@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box
+}
+body {
+    background-color: cornflowerblue;
+}
+header {
+    background-color: aquamarine;
+    height: 200px;
+    margin: 0 0 10px 0;
+
+}
+section {
+    background-color: black;
+    float: left;
+    margin-left: 20%;
+    height: 600px;
+}
+aside {
+    background-color: burlywood;
+    float: right;
+    margin-right: 20%;
+    height: 600px;
+}
