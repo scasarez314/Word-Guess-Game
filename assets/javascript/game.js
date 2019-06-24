@@ -6,3 +6,9 @@
 // when they guess wrong the counter should go down by increments of one."--"
 //track wins should go up by increments of one "++"
 // 
+var gameNames = {
+    firstName = "Galaga"
+    secondName = "Tetris"
+    thirdName = "Super Mario"
+
+}
